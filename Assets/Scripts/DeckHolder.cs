@@ -43,4 +43,28 @@ public class DeckHolder : MonoBehaviour
             topCardYValue += deckDisplayCardSet;
         }
     }
+    
+    /// <summary>
+    /// Takes the top card from the deck
+    /// </summary>
+    public CardData DrawCard()
+    {
+        //Get the top card in the list (queue was considered but due to us needing to shuffle the list, a queue is not suitable)
+        int index = deck.Count - 1;
+        CardData cardData = deck[index];
+        //Remove the top card in the list
+        deck.RemoveAt(index);
+        //reload cards displayed in the list
+        LoadDeckDisplay();
+        //Return the card
+        return cardData;
+    }
+
+    /// <summary>
+    /// Gets the rotation value that should be used for the cards
+    /// </summary>
+    public Vector3 GetCardRotationValue()
+    {
+        return setDeck.cardDefaultRotation;
+    }
 }

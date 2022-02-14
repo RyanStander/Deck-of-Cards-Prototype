@@ -4,6 +4,7 @@ using UnityEngine;
 public class DeckOfCards : ScriptableObject
 {
     public GameObject deckBackDisplay;
+    public Vector3 cardDefaultRotation;
     public CardData[] deckData = new CardData[52];
 
     //Perform check to automate card naming

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Revers
   m_EditorClassIdentifier: 
   deckBackDisplay: {fileID: 2914917039102314264, guid: c67d3ba751c5fb5449cd84a8cfe032b8, type: 3}
+  cardDefaultRotation: {x: 90, y: 0, z: 0}
   deckData:
   - cardName: PlayingCards_ASpades
     cardModel: {fileID: 100000, guid: dcf38305f6a653347a98083d1b69c33f, type: 3}
