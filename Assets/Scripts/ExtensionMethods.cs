@@ -3,6 +3,9 @@ using UnityEngine;
 
 public static class ExtensionMethods
 {
+    /// <summary>
+    /// Determines the suit of a card, does not work if the naming is bad
+    /// </summary>
     public static CardSuit DetermineCardSuit(string cardName)
     {
         //Covert to upper case to make handling the text easier
@@ -23,6 +26,9 @@ public static class ExtensionMethods
         }
     }
 
+    /// <summary>
+    ///Determines the number of a card based on its name, does not always work if naming is bad
+    /// </summary>
     public static int DetermineCardNumber(string cardName)
     {
         //Covert to upper case to make handling the text easier
@@ -61,6 +67,9 @@ public static class ExtensionMethods
         }
     }
 
+    /// <summary>
+    /// Suffles the values in a list
+    /// </summary>
     public static void Shuffle<T>(this IList<T> list)
     {
         System.Random rnd = new System.Random();
